@@ -8,7 +8,7 @@ Build-Depends: debhelper-compat (= 13),
  zlib1g-dev,
  libtool
 Rules-Requires-Root: no
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 
 Package: libgeoip1
 Section: libs
@@ -47,8 +47,7 @@ Package: geoip-bin
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
- ${shlibs:Depends},
- libnetaddr-ip-perl
+ ${shlibs:Depends}
 Replaces: libgeoip1 (<= 1.4.4.dfsg-2)
 Multi-Arch: foreign
 Description: IP lookup command line tools that use the GeoIP library
